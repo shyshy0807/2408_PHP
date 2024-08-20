@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <form> 태그 :  정보를 제출하기 위해 범위를 지정하는 역할
+           속성 action는 이동경로 
+           <label> 태그 : 입력받은 필드를 설명할 때 사용하빈다. 
+            <label>태그 하위에 <input>태그를 위치시킬 수 있고, 
+
+    <input> 태그 : 데이터를 입력 받을 수 있는 태그
+    <input> 태그 속성id=""을 label에 for="" 연결시켜준다.
+-->
+
+<br>
+<!-- email -->
+<label for="email">E-mail</label>
+<input type="email" id="email">
+
+<br>
+<!-- check box / name=그룹 id=for 연결시키기--> 
+<input type="checkbox" name="fruit" id="banana">
+<label for="banana">바나나</label>
+
+<input type="checkbox" name="fruit" id="apple" checked>
+<label for="apple">사과</label>
+
+<input type="checkbox" name="fruit" id="melon">
+<label for="melon">멜론</label>
+
+<input type="checkbox" name="fruit" id="grape">
+<label for="grape">포도</label>
+
+<br>
+<!-- readonly -->
+<input type="text" value="읽기전용" readonly>
+
+<br>
+<!-- textarea 태그-->
+<textarea cols="10" rows="4"></textarea>
+
+<!-- input태그를 이용한 버튼 만드는 방법 -->
+    <input type="submit" value="로그인"> 
+    <input type="reset">
+    <input type="button">
+
+<br>
+    <form action=""></form>
+    <label for="id">ID</label>
+    <input type="text" id="id" autofocus maxlength="10" placeholder="너 이름은 뭐야">
+    <!-- 
+    require 필수항목 / placeholder 안내글자 / maxlength 글자수 제한 / checked 기본 체크 / autofocus 커서깜빡임
+    <fieldset> 그룹묶기 / <legend>그룹명</legend>
+    -->
+<br>
+
+<fieldset>
+    <legend>로그인 정보</legend>
+    <label for="PW">PW</label>
+    <input type="password" id="pw"> 
+</fieldset>
+<br>
+
+<!-- button태그를 이용한 버튼 만드는 방법 -->
+    <button type="submit">로그인</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+<br>
+
+<!-- select, option태그-->
+ <select name="poketmon" >
+<option value="0">피카츄</option>
+<option value="1">라이츄</option>
+<option value="2">꼬부기</option>
+ </select>
+
+ <br>
+
+
+<button type="submit">로그인</button>
+<button type="reset">초기화</button>
+<button type="button">버튼</button>
+<br>
+
+    <!-- radio / name=그룹 id=for 연결시키기-->
+<input type="radio" name="foods" id="bulgoggi"  checked>
+<label for="bulgoggi">불고기</label>
+<input type="radio" name="foods" id="hamberger">
+<label for="hamberger">햄버거</label>
+<input type="radio" name="foods" id="zzajang">
+<label for="zzajang">짜장면</label>
+
+<!-- number -->
+<input type="number" min="0" max="10">
+
+
+    </body>
+</html>
