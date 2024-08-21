@@ -8,27 +8,28 @@
 <body>
     <h1>회원가입을 환영합니다</h1>
 
-    <fieldset>
+<form action="">
+<fieldset>
         <legend>사용자 정보</legend>
 <ul>
     <li>
         <label for="id">아이디</label> 
-        <input type="text" id="id" requird placeholder="4자~10자 사이, 공백없이" maxlength="15"> 
+        <input type="text" id="id" placeholder="4자 ~ 10자 사이, 공백없이" autofocus minlength="4" maxlength="10" requird> 
     </li>
 
     <li>
         <label for="email">이메일</label>
-        <input type="text" id="email" requird >
+        <input type="email" id="email" requird >
     </li>
 
     <li>
         <label for="pw">비밀번호</label>
-        <input type="password" id="pw" placeholder="문자와 숫자, 특수 기호 포함" maxlength="15"  requird > 
+        <input type="password" id="pw" placeholder="문자와 숫자, 특수 기호 포함" requird > 
     </li>
 
     <li>
-        <label for="pwcheck">비밀번호 확인</label>
-        <input type="password" id="pwcheck" maxlength="15"  requird > 
+        <label for="passwordChk">비밀번호 확인</label>
+        <input type="password" id="passwordChk" requird > 
     </li>
 
     <li>
@@ -42,10 +43,10 @@
 
     <li> 
         <label for="memo">메모</label>
-        <textarea cols="30" rows="10" id="memo" placeholder="남길 말씀이 있다면여기에"></textarea>
+        <textarea name="memo" cols="30" rows="10" id="memo" placeholder="남길 말씀이 있다면여기에"></textarea>
     </li>
  </ul>
-
+</fieldset>
 
 <fieldset>
     <legend>이벤트와 새로운 소식</legend>
@@ -56,8 +57,8 @@
 </fieldset>
 
 
-<button type="submit">가입하기</button>
-<button type="reset">취소</button>
-
+        <button type="submit">가입하기</button>
+        <a href="./04_4_tng3.html"><button type="reset">취소</button></a>
+    </form>
 </body>
 </html>
