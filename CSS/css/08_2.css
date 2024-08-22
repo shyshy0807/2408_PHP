@@ -1,0 +1,25 @@
+.div-1 {
+    /* 테두리 속성 */
+    border-style: solid;
+
+    /* 테두리 색상 */
+    border-color: #f0000f; 
+
+    /* 태두리 모서리 라운드 설정 */
+    border-radius: 10px;
+
+    /* 테두리 굵기 지정 */
+    border-width: 5px 10px;
+}
+
+    /* border-radius : - */
+        /* 모서리 옵션*/
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; */
+
+
+.div-2 {
+    border: 3px solid #f0000f;
+} 

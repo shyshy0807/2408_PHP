@@ -1,0 +1,46 @@
+.div-img {
+    width: 200px;
+    height:200px;
+
+    background-image: url(../../HTML/img/minidog.webp), url(../img/dog_feed.png); 
+
+    /* content가 넘칠 때 스크롤 생성 */
+    overflow: scroll;
+
+    /* 배경 이미지 크기 설정 */
+/* 
+-auto : 원본크기를 유지(기본값)
+-contain : 요소 안에 배경 이미지가 다 들어오도록 확대 및 축소
+-cover : 요소를 모두 덮도록 이미지를 확대 및 축소 합니다 .
+-px, em, rem : 하나의 값을 주어 너비를 지정하고, 너비에 맞는
+-% : 이미지의 비율에 맞도록 조절합니다. 
+*/
+
+
+/*  background-size: auto;
+    background-size: contain; 
+    background-size: cover;   (cover 많이 씀)
+*/
+
+    background-position : center;
+}
+
+
+
+.div-repeat {
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/dog_feed.png);
+
+/*      background-repeat: no-repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: round;
+
+        no-repeat, 반복없음, repeat-x 가로줄 반복, repeat-x 세로줄 반복, round 바둑판
+ */
+
+
+}
+
+

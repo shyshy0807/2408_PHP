@@ -1,0 +1,72 @@
+
+div {
+    border: 1px solid #000000;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+
+.div-0 {
+    background-color: #000;
+    margin: 10px 0px ;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 20px 20px;
+}
+
+.intro {
+    color: #ffa41b;
+    margin: 20px 20px;
+} 
+
+
+
+
+.div-1 {
+    color: #ffffff;
+    background-color: #000;
+}
+
+.p-1 {
+    color: #ffffff;
+    margin: 10px 10px;
+}
+
+
+
+.div-2 {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+h2 {
+    color: #ff0000;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.p-bold {
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.text-blue {
+    color: blue;
+}
+
+
+
+
+.div-3 {
+    background-color: #ffffff;
+    text-align: center;
+
+}
+
+.text-small {
+    font-size: 0.8em;
+}

@@ -1,0 +1,17 @@
+/* 
+<배경색과 범위 지정>
+background-color : html 요소의 배경 색을 지정합니다.
+background-clip : 요소의 배경 색을 지정합니다.
+*/
+
+div {
+    background-color: aqua;
+    border : 10px dotted #000;
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+
+    /* background-clip: padding-box;
+    background-clip: border-box;
+    background-clip: content-box; */
+}
