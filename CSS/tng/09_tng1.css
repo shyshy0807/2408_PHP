@@ -1,0 +1,40 @@
+body {
+    background-color: #02233b;
+}
+
+
+.container {
+    width: 500px;
+    height: 700px;
+    margin: auto;  
+    padding: 30px 15px;
+    border: 1px dotted #000;
+    background-color: white;
+    background-image: url(../../HTML/img/minidog.webp);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+}
+
+h1 {
+    background-color: darkcyan;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+/* margin: auto;  (화면에 중앙정렬) */

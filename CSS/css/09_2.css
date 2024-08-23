@@ -7,6 +7,9 @@
     /* content가 넘칠 때 스크롤 생성 */
     overflow: scroll;
 
+    background-attachment: local;
+    /* 백그라운드 어택치먼트>로컬 이용하면 배경이 같이 내려감  */
+
     /* 배경 이미지 크기 설정 */
 /* 
 -auto : 원본크기를 유지(기본값)
