@@ -1,0 +1,52 @@
+fieldset {
+    background-image: url(../../HTML/tng/바다.jpg);
+    background-repeat: no-repeat ;
+    background-size: 100%;
+    background-position: center;
+}
+
+legend {
+    color: magenta;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.label-required::before{
+    content: '*';
+    color: red;
+}
+
+input, textarea {
+    background-color: transparent;
+/*박스 투명주는 기능 transparent*/
+}
+
+/* input textarea 동시에 포커스 줄려면, 콤마 사용 */
+input:focus, textarea:focus {
+    border: 3px solid red;
+    outline:none;
+    }
+
+/* 클릭시 체크되어 있는 checked+label사용 */
+.radio-gender:checked + label {
+    color: red;
+}
+
+/* vertical-align 위치 상단 */
+.memo {
+    vertical-align: top;
+}
+
+/* 숨길 문구를 display:none처리*/
+.hide {
+    display:none;
+    margin: 0;
+/* margin을 줘야 글자가 안움직이게됨 */
+}
+
+.btn-send:hover + .hide {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+}
+/* button class주는 이유는 지금은 버튼이 많아질때 class태그로 관리가능 */

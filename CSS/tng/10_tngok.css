@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    width: 750px;
+    height: 50px;
+}
+
+li {
+    padding: 10px 30px;
+    background-color: rgb(85, 160, 160);
+    float: left;
+}
+/* li를 가로, 세로 크기로 주지 않고 padding수치로 박스설정가능 */
+
+li:not(:last-child) {
+    border-right: 3px solid #0af846;
+}
+/* 리스트에 : 마지막자식을 :last-child 뺀 (not) 나머지가 */
+
+li:hover {
+    background-color: #4d4d4d;
+}
+/* 리스트 hover tl  */
+
+li:last-child:hover {
+    background-color: red;
+}
+/* li에 마지막 아이 hover시 반응 */

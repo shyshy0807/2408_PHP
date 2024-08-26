@@ -1,0 +1,16 @@
+/* 특정 요소의 컨텐츠 앞에 다른 요소를 삽입 */
+.required::after {    
+    content: '*';
+    color: red;
+
+}
+/* 특정 요소의 첫 글자를 선택 */
+p::first-letter {
+    color: red;
+}
+
+/* 특정 요소의 첫 라인을 선택 */
+p::first-line {
+    color: green;
+}
+
