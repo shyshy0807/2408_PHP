@@ -1,0 +1,169 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    min-height: 100vh;
+    /* min=height 100vh주면??? */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+/* sidebar */
+.sidebar {
+    background-color: #ff3d49;
+
+}
+
+h1 {
+    margin: 2.5rem auto;
+    text-align: center;
+    color: #fff;
+}
+
+.side-menu {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 3rem;
+    /* 여기에 패딩주면 안됩니다! */
+}
+
+.side-menu > li {
+    padding: 0.2rem 1rem;
+
+}
+
+.side-menu > li:nth-child(1) {
+    font-weight: 900;
+    background-color: #ff5662;
+    padding: 0.5rem 1rem;
+}
+
+.side-menu > li:not(:nth-child(1)):hover {
+    background-color: #000;
+    opacity: 0.8;
+    transition: all 1.5s; 
+    /* transition효과 주는것 / ul의 자식의 li의 아이 좀 더 명확하게 주기위해 li를 넣어준다  
+    all은 모든 속성에 효과 주겠다는 의미 */
+}
+
+
+
+/* main */
+.main {
+    background-color: #e1e1e1;
+}
+
+.main-search-bar > form {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px auto;
+}
+
+#search {
+    width: 80%;
+/* id는 명령 시 #이름 사용 하면 됨  */
+}
+
+.main-search-bar {
+    height: 50px;
+}
+
+.btn-search {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6e5af0;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.main-title-bar {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url(./img/main_title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 늘려도 높이는 그대로라서 높이를 줌 */
+}
+
+h2 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.main-contents {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        /* repeat는 자동으로 채워지게 해서 auto-fill로 했고 최소값은 150px하고 최대값은 비율대로 1fr설정  */
+        padding: 1rem;
+        gap: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.card-img {
+    padding-top: 70%;
+    /*높이하는방법은: 그리드(위에 오토필 주고 minmax설정했기때문에 그리드가 자동 width=300px정도 설정, padding-top=width의 비율 70% 설정  */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-title {
+    margin: 1rem 0;
+
+}
+
+
+/* 탑버튼 */
+.btn-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-weight: 900;
+}
+
+    /* 2단으로 side / main 만듬
+    side bar 작업 순서 맨위에 글자로고 만들고 
+    ul에 padding 주면 안되고 li에 padding 준거임 
+
+    ul의 위치를 옮겨야하니 padding 값주고 
+    ul의 자식에 효과 줘야하니 ul>li{} 구체적으로 적어야됨 
+    마우스 올렸을때 효과는 첫번쨰 자식을 제외한 아이들한테 주겠다. 
+    
+    main-search-bar input / button 하나씩 만들고 
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 1rem;  
+}
+    main-title-bar에서 화면을 늘어날때마다 반응형해주는거 flex로 사용
+    display: flex;
+    justify-content: space-around;
+
+    main-contents는 grid로 작업해서 가이드템플릿에 minmax로 설정 
+
+    */
+
+
+    /* 줄 간격을 라인헤이트보다 ?? 마진이나 패딩을 많이 이용함  */
+    /* 내가 궁금한거는 ??? 왜 글자 크기를 안정해줘도 되는지? */

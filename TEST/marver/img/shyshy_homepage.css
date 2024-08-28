@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    min-height: 100vh;   
+}
+    /* height아니라 min-height는 최소??100vh  */
+
+a { color: #fff;
+    text-decoration: none;
+}
+    
+
+/* sidebar */
+.sidebar {
+    background-color: #23ccff
+}
+
+h1 {
+    margin: 2rem auto;
+    text-align: center;
+    color: #fff;
+}
+
+.side-menu {
+    list-style-type: none;
+    color: #fff;
+    margin-bottom: 5rem;
+    /* ul 스타일 주는것 리스트 타입, 글자색 설정 */
+}
+
+
+.side-menu > li {
+    padding: 0.5rem 2rem;
+}
+
+.side-menu > li:nth-child(1) {
+    background-color: rgba(156, 224, 255, 0.733);
+    font-weight: 900;
+}
+
+.side-menu > li:not(:nth-child(1)):hover{
+    background: #000;
+    transition: all 1.5s;
+}
+
+
+/* main */
+.main {
+    background-color: #09061d;
+}
+
+.search-bar > form{
+ display: flex;
+ justify-content: space-around;
+ margin: 20px auto;
+}
+
+#search {
+    width: 80%;
+}
+
+.btn-search {
+    width: 40px;
+    height: 40px;
+    background-color: #23ccff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: none;
+}
+
+
+
+.main-Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url(./main_title.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2 {
+    color: #fff;
+    font-size: 3rem;
+
+}
+
+.main-contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+.box {
+    background-color: #ffffff;
+    padding: 0.7rem;
+}
+
+.box-img {
+    padding-top: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3, p {
+    color: #01164e;
+    margin: 1rem 0;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: #23ccff;
+    border-radius: 50%;
+    font-weight: 900;
+    border: none;
+}
+
+/* 이번 연습에서 누락한거 버튼 타입을 놓치지 않기 
+rem를 이해하기 : em은 부모, rem은 최상단   */
+/* min-height: 100vh;   
+크롬의 픽셀은 1rem=16px; */
