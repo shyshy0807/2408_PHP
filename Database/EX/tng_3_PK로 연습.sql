@@ -34,7 +34,7 @@ SET updated_at = NOW()
 WHERE sal_id = (
 		SELECT sal_id
 		FROM salaries
-		WHERE emp_id = 99972
+		WHERE emp_id = 99904
 		ORDER BY start_at DESC
 		LIMIT 1
 		)
@@ -46,14 +46,14 @@ INSERT INTO salaries(
 	,start_at 	
 )
 VALUES (
-	99972
+	99904
 	,20000000
 	,date(NOW())
 );
 
 SELECT *
 		FROM salaries
-		WHERE emp_id = 99972
+		WHERE emp_id = 99904
 		ORDER BY start_at DESC
 		;
 		
